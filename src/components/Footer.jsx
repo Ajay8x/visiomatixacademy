@@ -17,7 +17,7 @@ export default function Footer({ onNavigate }) {
   };
 
   return (
-    <footer className="site-footer">
+    <footer id="contact" className="site-footer">
       <div className="container footer-container">
         {/* Spacious 4-Column Layout */}
         <div className="footer-grid">
@@ -141,7 +141,7 @@ export default function Footer({ onNavigate }) {
         <div className="footer-bottom">
           <div className="footer-bottom-content">
             <p className="copyright-text">
-              © {currentYear} {COMPANY_DETAILS.name}. All rights reserved. Built with React.
+              © {currentYear} {COMPANY_DETAILS.name}. All rights reserved.
             </p>
             <div className="footer-disclaimer">
               <span>Notice: Verified official details for Visiomatix Media Pvt. Ltd. Nashik, Maharashtra.</span>

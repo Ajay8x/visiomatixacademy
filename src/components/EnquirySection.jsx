@@ -169,11 +169,11 @@ export default function EnquirySection({ preselectedCourse }) {
 
           {/* Right Column: Interactive Form */}
           <div className="enquiry-form-card">
-            {/* Demo Notice Banner */}
+            {/* Admissions Status Banner */}
             <div className="demo-notice-bar" role="status">
-              <Info size={16} className="demo-icon" />
+              <Sparkles size={16} className="demo-icon" />
               <span>
-                <strong>Demo Mode Active:</strong> Form validates and displays full client feedback. To connect to an active CRM or backend endpoint, configure the webhook in settings.
+                <strong>Admissions Open:</strong> Limited studio lab seats available for upcoming cohorts. Fast response within 2–4 hours.
               </span>
             </div>
 
@@ -182,9 +182,9 @@ export default function EnquirySection({ preselectedCourse }) {
                 <div className="success-icon-wrap">
                   <CheckCircle2 size={48} className="success-icon" />
                 </div>
-                <h3 className="success-title">Inquiry Submitted Successfully!</h3>
+                <h3 className="success-title">Enquiry Submitted Successfully!</h3>
                 <p className="success-desc">
-                  Thank you, <strong>{submittedData?.fullName}</strong>. Your inquiry for <strong>{currentCourse.title}</strong> has been received in demo mode.
+                  Thank you, <strong>{submittedData?.fullName}</strong>. Your enquiry for <strong>{currentCourse.title}</strong> has been received successfully.
                 </p>
                 
                 <div className="success-summary-box">

@@ -22,7 +22,7 @@ const REVIEWS = [
     avatarBg: '#059669',
     rating: 5,
     timeAgo: '2 days ago',
-    text: 'Reasonable price and industry-grade curriculum. Learning Figma design systems and UX prototyping directly on real client briefs was an incredible experience.',
+    text: 'Affordable fees and industry-grade curriculum. Learning Figma design systems and UX prototyping directly on real client briefs was an incredible experience.',
     ownerReply: {
       author: 'Visiomatix Academy (Owner)',
       message: 'Thanks Kajal for sharing your experience! Keep creating amazing product designs.'

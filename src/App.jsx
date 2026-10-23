@@ -35,7 +35,7 @@ export default function App() {
 
   // Observe active section on scroll
   useEffect(() => {
-    const sectionIds = ['hero', 'courses', 'services', 'about', 'workflow', 'admissions', 'enquiry', 'faqs'];
+    const sectionIds = ['hero', 'courses', 'services', 'about', 'workflow', 'admissions', 'enquiry', 'faqs', 'contact'];
     const handleScroll = () => {
       const scrollPosition = window.scrollY + 180;
       for (let i = sectionIds.length - 1; i >= 0; i--) {
