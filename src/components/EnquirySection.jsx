@@ -101,7 +101,7 @@ export default function EnquirySection({ preselectedCourse }) {
           </h2>
           <div className="achievers-title-underline" style={{ maxWidth: '340px' }} aria-hidden="true" />
           <p className="section-subtitle">
-            Get personalized career clarity, review sample studio project briefs, and reserve your seat for the next batch at our Nashik campus.
+            Get personal career clarity, review sample client briefs, and reserve your seat.
           </p>
         </div>
 
@@ -110,7 +110,7 @@ export default function EnquirySection({ preselectedCourse }) {
           <div className="enquiry-contact-card">
             <h3 className="contact-card-title">Connect with Admissions</h3>
             <p className="contact-card-intro">
-              Prefer speaking directly with an admissions mentor? Feel free to call, WhatsApp, or drop by our studio in Nashik.
+              Speak directly with an admissions mentor via call, WhatsApp, or studio visit in Nashik.
             </p>
 
             <div className="contact-items-list">

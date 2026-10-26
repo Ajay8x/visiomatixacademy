@@ -23,7 +23,7 @@ export default function AdmissionsSteps({ onNavigate }) {
           </h2>
           <div className="achievers-title-underline" style={{ maxWidth: '340px' }} aria-hidden="true" />
           <p className="section-subtitle">
-            We prioritize transparent guidance over pushy sales. Here is how your onboarding journey at Visiomatix unfolds.
+            Transparent guidance over pushy sales. Your onboarding in 4 simple steps.
           </p>
         </div>
 

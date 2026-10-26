@@ -53,7 +53,7 @@ export default function CourseCatalog({ onSelectCourse, onNavigate }) {
           </h2>
           <div className="achievers-title-underline" style={{ maxWidth: '340px' }} aria-hidden="true" />
           <p className="section-subtitle">
-            Curated practical tracks in technology, design, digital marketing, and creative CGI visual effects. Each program is rooted in hands-on studio production.
+            Hands-on practical tracks rooted in live agency production and real client briefs.
           </p>
         </div>
 

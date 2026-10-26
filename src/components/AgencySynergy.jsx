@@ -24,7 +24,7 @@ export default function AgencySynergy({ onNavigate }) {
           </h2>
           <div className="achievers-title-underline" style={{ maxWidth: '340px' }} aria-hidden="true" />
           <p className="section-subtitle">
-            Visiomatix Media is an active creative agency delivering enterprise web solutions, marketing campaigns, and commercial 3D/CGI visual effects to growing brands.
+            Active creative agency delivering modern web platforms, marketing campaigns, and commercial CGI.
           </p>
         </div>
 
@@ -33,7 +33,7 @@ export default function AgencySynergy({ onNavigate }) {
           <div className="synergy-banner-text">
             <h3 className="synergy-banner-title">The Visiomatix Studio Advantage</h3>
             <p className="synergy-banner-p">
-              Because we run live commercial client operations, our academy students learn alongside active agency campaigns, real web platforms, and commercial CGI pipelines. This eliminates the gap between classroom theory and employment reality.
+              Students learn alongside active agency campaigns, web applications, and commercial CGI pipelines—bridging classroom theory and career reality.
             </p>
           </div>
           <div className="synergy-banner-cta">

@@ -69,7 +69,7 @@ export default function Hero({ onNavigate }) {
 
         {/* 4. Centered Paragraph Description */}
         <p className="achievers-hero-desc">
-          From beginners to career transitioners — Visiomatix Media connects aspiring tech and creative talent with authentic client deliverables across Nashik. Real workflows. Industry mentors. Zero theory fluff.
+          Practical tech and creative training on live agency briefs in Nashik. Real workflows, direct industry mentorship, zero theory fluff.
         </p>
 
         {/* 5. Dual Buttons (Left Primary Accent, Right Dark Navy) */}

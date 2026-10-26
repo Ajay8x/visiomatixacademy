@@ -6,32 +6,32 @@ export default function LearningOutcomes() {
     {
       icon: <FolderGit2 size={24} />,
       title: 'Production GitHub Repositories',
-      desc: 'Clean, modular, well-documented source code repositories displaying proper branch conventions, pull requests, and automated deployment.'
+      desc: 'Clean source code repositories with proper branch conventions, PR reviews, and automated deployment.'
     },
     {
       icon: <Layout size={24} />,
       title: 'Interactive Figma Product Systems',
-      desc: 'Industry-standard UI kits, responsive component libraries, and end-to-end user experience case studies demonstrating design thinking.'
+      desc: 'Scalable UI component libraries, design tokens, and end-to-end UX case studies.'
     },
     {
       icon: <Film size={24} />,
       title: 'Commercial 3D & CGI Showreel',
-      desc: 'High-definition video showreel featuring hard-surface models, photorealistic textures, dynamic physics, and commercial product animations.'
+      desc: 'HD commercial showreel featuring photorealistic 3D assets, lighting, and physics simulations.'
     },
     {
       icon: <TrendingUp size={24} />,
       title: 'Audited Marketing Case Studies',
-      desc: 'Data-backed campaign briefs showing audience segmentation, SEO rank gains, A/B ad creative tests, and conversion optimization reports.'
+      desc: 'Data-driven campaign case studies with audience targeting, SEO gains, and conversion metrics.'
     },
     {
       icon: <Award size={24} />,
       title: 'Verified Certificate & Agency Credentials',
-      desc: 'Formal certification from Visiomatix Media validating verified hours of hands-on project work and demonstrated competence.'
+      desc: 'Official certification from Visiomatix Media validating verified practical studio hours.'
     },
     {
       icon: <UserCheck size={24} />,
       title: '1-on-1 Portfolio & Interview Coaching',
-      desc: 'Direct resume critiques, LinkedIn profile optimization, and simulated technical/creative interview rounds with hiring practitioners.'
+      desc: 'Personal resume critiques, LinkedIn profile polish, and mock technical interview rounds.'
     }
   ];
 
@@ -48,7 +48,7 @@ export default function LearningOutcomes() {
           </h2>
           <div className="achievers-title-underline" style={{ maxWidth: '300px' }} aria-hidden="true" />
           <p className="section-subtitle">
-            Hiring managers don't hire generic certificates; they hire proven capability. Every milestone at Visiomatix is engineered to build verifiable proof of your skill.
+            Every milestone is engineered to build verifiable proof of capability for hiring managers.
           </p>
         </div>
 

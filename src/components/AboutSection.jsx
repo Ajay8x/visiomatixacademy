@@ -15,7 +15,7 @@ export default function AboutSection() {
           </h2>
           <div className="achievers-title-underline" style={{ maxWidth: '340px' }} aria-hidden="true" />
           <p className="section-subtitle">
-            An established multidisciplinary creative and technology organization transforming how students, freshers, and professionals transition into high-growth careers.
+            Transforming how aspiring talent transitions into high-growth creative and tech careers.
           </p>
         </div>
 
@@ -29,15 +29,11 @@ export default function AboutSection() {
 
             <div className="about-paragraphs">
               <p className="lead font-medium">
-                <strong>Visiomatix Media</strong> is a multidisciplinary creative and digital organization offering professional education alongside real-world industry exposure. With expertise in branding, digital marketing, CGI advertising, 3D modeling, motion graphics, VFX, and IT solutions, we bridge the gap between learning and employment.
+                <strong>Visiomatix Media</strong> is a digital studio and academy offering industry training across web development, UI/UX systems, commercial CGI, and digital marketing.
               </p>
 
               <p>
-                Our institute operates on real industry workflows, not classroom theory. We believe that the best way to learn is by doing—working on actual projects, collaborating with professionals, and experiencing the dynamics of a corporate environment.
-              </p>
-
-              <p>
-                Whether you're a student looking to kickstart your career, a professional seeking to upskill, or someone looking to switch careers, Visiomatix Media provides the environment, mentorship, and opportunities to help you succeed.
+                Students train on live client briefs, agile sprints, and production standards—giving freshers and career-switchers direct corporate experience and proven portfolio credentials.
               </p>
             </div>
 
@@ -66,7 +62,7 @@ export default function AboutSection() {
               <div>
                 <h3 className="pillar-card-title">Real Industry Workflows</h3>
                 <p className="pillar-card-desc">
-                  No artificial toy assignments. You learn standard Git flows, agile sprints, client revision feedback, and production-ready deliverables.
+                  No toy projects. Train on Git conventions, agile sprints, and production-ready client deliverables.
                 </p>
               </div>
             </div>
@@ -78,7 +74,7 @@ export default function AboutSection() {
               <div>
                 <h3 className="pillar-card-title">Direct Senior Mentorship</h3>
                 <p className="pillar-card-desc">
-                  Work alongside active creative directors, front-end engineers, full-stack architects, and performance marketers on live studio challenges.
+                  Work directly alongside active full-stack engineers, CGI artists, and growth directors.
                 </p>
               </div>
             </div>
@@ -90,7 +86,7 @@ export default function AboutSection() {
               <div>
                 <h3 className="pillar-card-title">Portfolio & Career Readiness</h3>
                 <p className="pillar-card-desc">
-                  Graduate with a publicly accessible, verifiable showcase—live web applications, Figma links, and CGI showreels that impress hiring managers.
+                  Graduate with verified web apps, Figma systems, and commercial CGI showreels that impress recruiters.
                 </p>
               </div>
             </div>
