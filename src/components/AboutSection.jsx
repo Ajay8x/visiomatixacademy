@@ -44,7 +44,10 @@ export default function AboutSection() {
               </div>
               <div className="dna-item">
                 <span className="dna-title">Operating Model</span>
-                <span className="dna-value">Active Digital Agency + Tech Academy</span>
+                <span className="dna-value">
+                  <span className="dna-live-dot" aria-hidden="true" />
+                  Active Digital Agency + Tech Academy
+                </span>
               </div>
               <div className="dna-item">
                 <span className="dna-title">Training Philosophy</span>
