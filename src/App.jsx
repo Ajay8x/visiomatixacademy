@@ -35,7 +35,7 @@ export default function App() {
 
   // Observe active section on scroll
   useEffect(() => {
-    const sectionIds = ['hero', 'courses', 'services', 'about', 'workflow', 'admissions', 'enquiry', 'faqs', 'contact'];
+    const sectionIds = ['hero', 'courses', 'services', 'about', 'workflow', 'admissions', 'enquiry', 'faqs', 'reviews', 'contact'];
     const handleScroll = () => {
       const scrollPosition = window.scrollY + 180;
       for (let i = sectionIds.length - 1; i >= 0; i--) {
@@ -81,14 +81,14 @@ export default function App() {
         {/* 9. Transparent 4-Step Admission Journey */}
         <AdmissionsSteps onNavigate={handleNavigate} />
 
-        {/* 10. Verified Student & Alumni Testimonial Reviews (Sliding Right) */}
-        <TestimonialsSection />
-
-        {/* 11. Interactive 1-on-1 Counselling & Admission Enquiry Form */}
+        {/* 10. Interactive 1-on-1 Counselling & Admission Enquiry Form */}
         <EnquirySection preselectedCourse={selectedCourseForEnquiry} />
 
         {/* 11. Frequently Asked Questions */}
         <FaqSection onNavigate={handleNavigate} />
+
+        {/* 12. Verified Student & Alumni Testimonial Reviews (At Bottom) */}
+        <TestimonialsSection />
 
         {/* Continuous Infinite Marquee Ticker at bottom above Footer */}
         <MarqueeTicker />

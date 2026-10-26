@@ -1079,7 +1079,9 @@
    5. COURSE CATALOG & FILTERS
    -------------------------------------------------------------------------- */
 .courses-section {
-  background-color: #ffffff;
+  background: linear-gradient(180deg, #f0f6ff 0%, #f6faff 50%, #eff6ff 100%);
+  border-top: 1px solid #e2edfd;
+  border-bottom: 1px solid #e2edfd;
 }
 
 .course-filters {
@@ -1117,7 +1119,7 @@
 }
 
 /* ==========================================================================
-   5. COMPACT COURSE CARDS & RIGHT-SLIDING ANIMATED TRACK
+   5. COMPACT COURSE CARDS & RESPONSIVE GRID
    ========================================================================== */
 @keyframes scrollRightAnimation {
   0% {
@@ -1128,30 +1130,35 @@
   }
 }
 
-.courses-slider-wrapper {
-  width: 100%;
-  overflow: hidden;
-  padding: 0.75rem 0 1.75rem;
-  position: relative;
-  mask-image: linear-gradient(to right, transparent 0%, black 4%, black 96%, transparent 100%);
-  -webkit-mask-image: linear-gradient(to right, transparent 0%, black 4%, black 96%, transparent 100%);
-}
-
-.courses-slider-track {
-  display: flex;
+.courses-grid {
+  display: grid;
+  grid-template-columns: 1fr;
   gap: 1.5rem;
-  width: max-content;
-  animation: scrollRightAnimation 40s linear infinite;
-  will-change: transform;
+  width: 100%;
+  margin-top: 1.75rem;
+  margin-bottom: 2rem;
 }
 
-.courses-slider-track:hover {
-  animation-play-state: paused;
+@media (min-width: 640px) {
+  .courses-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .courses-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 1280px) {
+  .courses-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
 
 .course-card-compact {
-  width: 320px;
-  flex-shrink: 0;
+  width: 100%;
   background: #ffffff;
   border: 1px solid #e2e8f0;
   border-radius: 16px;

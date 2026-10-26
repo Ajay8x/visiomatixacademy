@@ -71,65 +71,63 @@ export default function CourseCatalog({ onSelectCourse, onNavigate }) {
             </button>
           ))}
         </div>
-      </div>
 
-      {/* Courses Slider Container - Full Width Continuous Right-Sliding Animation */}
-      <div className="courses-slider-wrapper">
-          <div className="courses-slider-track">
-            {(activeCategory === 'all' ? [...COURSES, ...COURSES] : [...filteredCourses, ...filteredCourses, ...filteredCourses]).map((course, idx) => (
-              <div key={`${course.id}-${idx}`} className="course-card-compact">
-                {course.image && (
-                  <div className="course-card-media-compact">
-                    <img
-                      src={course.image}
-                      alt={course.title}
-                      className="course-card-img"
-                      loading="lazy"
-                    />
-                    <div className="course-card-media-overlay" aria-hidden="true" />
-                    <span className="course-compact-badge">{course.badge}</span>
-                    <span className="course-compact-duration">
-                      <Clock size={12} />
-                      <span>{course.duration}</span>
-                    </span>
+        {/* Courses Grid - Clean, Static & Responsive */}
+        <div className="courses-grid">
+          {filteredCourses.map((course) => (
+            <div key={course.id} className="course-card-compact">
+              {course.image && (
+                <div className="course-card-media-compact">
+                  <img
+                    src={course.image}
+                    alt={course.title}
+                    className="course-card-img"
+                    loading="lazy"
+                  />
+                  <div className="course-card-media-overlay" aria-hidden="true" />
+                  <span className="course-compact-badge">{course.badge}</span>
+                  <span className="course-compact-duration">
+                    <Clock size={12} />
+                    <span>{course.duration}</span>
+                  </span>
+                </div>
+              )}
+
+              <div className="course-card-body-compact">
+                <div className="course-card-title-row">
+                  <div className="course-icon-badge" aria-hidden="true">
+                    {getCourseIcon(course.id)}
                   </div>
-                )}
+                  <h3 className="course-title-compact">{course.title}</h3>
+                </div>
 
-                <div className="course-card-body-compact">
-                  <div className="course-card-title-row">
-                    <div className="course-icon-badge" aria-hidden="true">
-                      {getCourseIcon(course.id)}
-                    </div>
-                    <h3 className="course-title-compact">{course.title}</h3>
-                  </div>
+                <p className="course-desc-compact">{course.shortDesc}</p>
 
-                  <p className="course-desc-compact">{course.shortDesc}</p>
+                <div className="course-compact-actions">
+                  <button
+                    type="button"
+                    className="course-compact-btn-primary"
+                    onClick={() => handleEnquireCourse(course)}
+                  >
+                    <span>Apply Now</span>
+                    <ArrowRight size={15} />
+                  </button>
 
-                  <div className="course-compact-actions">
-                    <button
-                      type="button"
-                      className="course-compact-btn-primary"
-                      onClick={() => handleEnquireCourse(course)}
-                    >
-                      <span>Apply Now</span>
-                      <ArrowRight size={15} />
-                    </button>
-
-                    <button
-                      type="button"
-                      className="course-compact-syllabus-link"
-                      onClick={() => setSelectedCourseForModal(course)}
-                      aria-label={`View full syllabus for ${course.title}`}
-                    >
-                      <BookOpen size={13} />
-                      <span>View Syllabus</span>
-                    </button>
-                  </div>
+                  <button
+                    type="button"
+                    className="course-compact-syllabus-link"
+                    onClick={() => setSelectedCourseForModal(course)}
+                    aria-label={`View full syllabus for ${course.title}`}
+                  >
+                    <BookOpen size={13} />
+                    <span>View Syllabus</span>
+                  </button>
                 </div>
               </div>
-            ))}
-          </div>
+            </div>
+          ))}
         </div>
+      </div>
 
         {/* Program Details Modal */}
       <CourseModal
