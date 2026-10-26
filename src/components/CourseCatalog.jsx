@@ -71,9 +71,10 @@ export default function CourseCatalog({ onSelectCourse, onNavigate }) {
             </button>
           ))}
         </div>
+      </div>
 
-        {/* Courses Slider Container - Continuous Right-Sliding Animation */}
-        <div className="courses-slider-wrapper">
+      {/* Courses Slider Container - Full Width Continuous Right-Sliding Animation */}
+      <div className="courses-slider-wrapper">
           <div className="courses-slider-track">
             {(activeCategory === 'all' ? [...COURSES, ...COURSES] : [...filteredCourses, ...filteredCourses, ...filteredCourses]).map((course, idx) => (
               <div key={`${course.id}-${idx}`} className="course-card-compact">
@@ -129,9 +130,8 @@ export default function CourseCatalog({ onSelectCourse, onNavigate }) {
             ))}
           </div>
         </div>
-      </div>
 
-      {/* Program Details Modal */}
+        {/* Program Details Modal */}
       <CourseModal
         course={selectedCourseForModal}
         isOpen={Boolean(selectedCourseForModal)}

@@ -6,7 +6,7 @@ const REVIEWS = [
     id: 1,
     name: 'Harsh Singh',
     initials: 'HS',
-    avatarBg: '#ea580c',
+    avatarBg: '#2563eb',
     rating: 5,
     timeAgo: 'Yesterday',
     text: 'Great practical learning with live projects. The mentors from Visiomatix agency helped me master full-stack React and crack my first developer role.',
@@ -19,7 +19,7 @@ const REVIEWS = [
     id: 2,
     name: 'Kajal Singh',
     initials: 'KS',
-    avatarBg: '#059669',
+    avatarBg: '#0f172a',
     rating: 5,
     timeAgo: '2 days ago',
     text: 'Affordable fees and industry-grade curriculum. Learning Figma design systems and UX prototyping directly on real client briefs was an incredible experience.',
@@ -32,7 +32,7 @@ const REVIEWS = [
     id: 3,
     name: 'Om Prajapati',
     initials: 'OP',
-    avatarBg: '#2563eb',
+    avatarBg: '#1d4ed8',
     rating: 5,
     timeAgo: '5 hours ago',
     text: 'Best CGI and 3D modeling track in the region. The Blender and commercial VFX lighting workflows are taught at real agency production standards.',
@@ -45,7 +45,7 @@ const REVIEWS = [
     id: 4,
     name: 'Priya Sharma',
     initials: 'PS',
-    avatarBg: '#7c3aed',
+    avatarBg: '#000000',
     rating: 5,
     timeAgo: '3 days ago',
     text: 'The performance marketing and GA4 analytics training gave me real campaign management experience. I landed a paid agency internship within 3 months!',
@@ -58,7 +58,7 @@ const REVIEWS = [
     id: 5,
     name: 'Rohit Verma',
     initials: 'RV',
-    avatarBg: '#d97706',
+    avatarBg: '#3b82f6',
     rating: 5,
     timeAgo: '1 week ago',
     text: 'Full stack development with modern React and Node.js was taught step by step. No boring theory, only real production commits and weekly code reviews.',
@@ -71,7 +71,7 @@ const REVIEWS = [
     id: 6,
     name: 'Ananya Deshmukh',
     initials: 'AD',
-    avatarBg: '#db2777',
+    avatarBg: '#1e40af',
     rating: 5,
     timeAgo: '4 days ago',
     text: 'Brand identity systems and vector typography in Illustrator transformed my creative portfolio. I now handle freelance design briefs with full confidence.',
@@ -127,7 +127,7 @@ export default function TestimonialsSection() {
               <div className="testimonial-rating-row">
                 <div className="testimonial-stars" aria-label={`${review.rating} out of 5 stars`}>
                   {[...Array(review.rating)].map((_, sIdx) => (
-                    <Star key={sIdx} size={15} className="star-filled" fill="#f59e0b" color="#f59e0b" />
+                    <Star key={sIdx} size={15} className="star-filled" fill="#2563eb" color="#2563eb" />
                   ))}
                 </div>
                 <span className="testimonial-time">{review.timeAgo}</span>
